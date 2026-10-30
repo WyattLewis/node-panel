@@ -99,6 +99,8 @@ Par défaut, le panneau n'écoute que sur la machine elle-même (`127.0.0.1`). D
   puis ouvre http://127.0.0.1:8420 sur ton ordinateur.
 - **Réseau local** : dans **Paramètres**, choisis « Tout le réseau local » et définis un mot de passe (obligatoire). Le panneau est alors accessible sur `http://<ip-du-serveur>:8420`.
 
+Avec un mot de passe, le panneau affiche sa propre page de connexion : **un seul champ, le mot de passe** (pas de nom d'utilisateur). La session dure 30 jours ; **Déconnexion** est en haut à droite. Après 5 essais ratés, l'adresse IP est bloquée 15 minutes.
+
 > N'expose jamais le panneau directement sur Internet : il permet de lancer des commandes sur la machine. Si tu en as besoin, passe par un reverse proxy en HTTPS (Caddy, nginx…).
 
 ### Port et réglages
