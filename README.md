@@ -7,6 +7,7 @@ Un panneau dans l'esprit de Pterodactyl pour gérer plusieurs projets Node.js su
 - Variables d'environnement par projet (`PORT`, `NODE_ENV`…)
 - Redémarrage automatique en cas de crash, démarrage automatique avec le panneau
 - Scan d'un dossier pour ajouter d'un coup tous les projets qui ont un `package.json`
+- **Explorateur de fichiers** par projet, avec un **éditeur de code** (coloration syntaxique, Ctrl+S, recherche) : créer, renommer, envoyer par glisser-déposer, supprimer
 - Mises à jour depuis ce dépôt
 
 Deux versions, à télécharger dans [**Releases**](https://github.com/WyattLewis/node-panel/releases/latest) :
@@ -35,6 +36,7 @@ Deux versions, à télécharger dans [**Releases**](https://github.com/WyattLewi
 
 - **+ Nouveau projet** : un nom, le dossier du projet (bouton **Parcourir…**) et la commande de démarrage (`npm start` par défaut).
 - **Scanner un dossier** : ajoute d'un coup tous les projets d'un dossier.
+- Onglet **Fichiers** d'un projet : explorateur et éditeur de code. Les suppressions vont dans la corbeille de Windows.
 - **Fermer la fenêtre** la réduit près de l'horloge, et les projets continuent de tourner. Pour quitter vraiment : clic droit sur l'icône, puis **Quitter (arrête les projets)**.
 - **Paramètres** : lancer l'application avec Windows, démarrer réduite, comportement du bouton de fermeture.
 
@@ -79,6 +81,10 @@ npm start
 Ensuite, ouvre http://127.0.0.1:8420.
 
 > Ne lance pas le panneau en root : il exécute les commandes de tes projets avec les droits de l'utilisateur qui le lance.
+
+### Fichiers des projets
+
+L'onglet **Fichiers** d'un projet permet de parcourir son dossier, d'éditer ses fichiers, d'en envoyer (glisser-déposer) et d'en télécharger. Sous Linux, **la suppression est définitive** (le panneau demande confirmation).
 
 ### Accès depuis un autre ordinateur
 
